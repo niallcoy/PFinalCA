@@ -12,3 +12,5 @@ public class AdminLogin extends AppCompatActivity {
         setContentView(R.layout.activity_admin_login);
     }
 }
+
+}
