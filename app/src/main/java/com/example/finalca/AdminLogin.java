@@ -13,4 +13,3 @@ public class AdminLogin extends AppCompatActivity {
     }
 }
 
-}

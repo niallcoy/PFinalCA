@@ -16,24 +16,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
-
         mUserBtn=findViewById(R.id.userBtn);
         mAdministratorBtn=findViewById(R.id.administratorBtn);
 
-        //Handle register button click
         mUserBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 startActivity(new Intent(MainActivity.this, UserLogin.class)); // User activity
             }
         });
-        //Handle login button click
         mAdministratorBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Start register activity
-                startActivity(new Intent(MainActivity.this, AdminLogin.class));
+                startActivity(new Intent(MainActivity.this, AdminLogin.class)); //Admin activity
             }
         });
 
